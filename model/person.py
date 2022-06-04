@@ -1,3 +1,5 @@
+# Clase que representa un competidor
+
 class Person:
     def __init__(self, id, first_last_name, second_last_name, name, middle_initial, gender, age, final_time):
         self.id = id
