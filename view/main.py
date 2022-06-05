@@ -52,6 +52,9 @@ def actions_menu(participants):
             print_average_time_by_age_and_gender(participants, "M")
         if option == "11":
             check = False
+        else:
+            print("Opcion incorrecta")
+            aux = input("Presione enter para continuar")
         aux = input("Presione enter para continuar")
         clear()
 
