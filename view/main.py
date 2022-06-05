@@ -30,27 +30,27 @@ def actions_menu(participants):
         option = input("Ingrese una opcion: ")
         if option == "1":
             show_participants(participants)
-        if option == "2":
+        elif option == "2":
             total_participants(participants)
-        if option == "3":
+        elif option == "3":
             total_participants_by_age_group(participants)
-        if option == "4":
+        elif option == "4":
             total_participants_by_gender(participants)
-        if option == "5":
+        elif option == "5":
             winners_by_age_group(participants)
-        if option == "6":
+        elif option == "6":
             winners_by_gender(participants)
-        if option == "7":
+        elif option == "7":
             winners_by_age_group(participants, "F")
             winners_by_age_group(participants, "M")
-        if option == "8":
+        elif option == "8":
             general_winner(participants)
-        if option == "9":
+        elif option == "9":
             show_histogram(participants)
-        if option == "10":
+        elif option == "10":
             print_average_time_by_age_and_gender(participants, "F")
             print_average_time_by_age_and_gender(participants, "M")
-        if option == "11":
+        elif option == "11":
             check = False
         else:
             print("Opcion incorrecta")
@@ -81,11 +81,11 @@ def main_menu():
                 print("Tipo de archivo incorrecto")
             except InvalidFileFormatException:
                 print("Cantidad de columnas incorrecta")
-        if option == "2":
+        elif option == "2":
             check = False
         else:
             print("Opcion incorrecta")
-            aux = input("Presione enter para continuar")
+
 
 
 main_menu()
