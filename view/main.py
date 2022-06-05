@@ -54,7 +54,6 @@ def actions_menu(participants):
             check = False
         else:
             print("Opcion incorrecta")
-            aux = input("Presione enter para continuar")
         aux = input("Presione enter para continuar")
         clear()
 
