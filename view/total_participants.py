@@ -1,6 +1,7 @@
-from file_reader import read_file
-from age_group_selector import select_age_group
-from gender_selector import gender_selector
+from controller.file_reader import read_file
+from controller.age_group_selector import select_age_group
+from controller.gender_selector import gender_selector
+from view.table_header import print_table_header
 
 
 def show_participants(participants):
@@ -9,9 +10,7 @@ def show_participants(participants):
     """
     print("\nParticipantes:")
 
-    print(("|{:13}|{:15}|{:16}|{:13}|{:13}|{:13}|{:13}|{:13}|".format("Cedula", "Primer Apellido", "Segundo Apellido",
-                                                                      "Nombre", "Inicial ", "Genero", "Edad",
-                                                                      "Tiempo final")))
+    print_table_header()
     for participant in participants:
         print(str(participant))
 
@@ -50,7 +49,3 @@ def total_participants_by_gender(participants):
     print("{:13} {:13}".format("Hombres: ", len(men)))
 
 
-show_participants(read_file("../data/competencia.txt"))
-total_participants(read_file("../data/competencia.txt"))
-total_participants_by_age_group(read_file("../data/competencia.txt"))
-total_participants_by_gender(read_file("../data/competencia.txt"))
