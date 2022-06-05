@@ -1,4 +1,3 @@
-from controller.file_reader import read_file
 
 
 def average_time(participants):

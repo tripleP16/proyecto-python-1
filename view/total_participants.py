@@ -1,4 +1,3 @@
-from controller.file_reader import read_file
 from controller.age_group_selector import select_age_group
 from controller.gender_selector import gender_selector
 from view.table_header import print_table_header

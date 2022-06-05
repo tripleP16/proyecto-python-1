@@ -11,6 +11,7 @@ class Person:
         self.age = int(age)
         self.final_time = final_time
 
+    # Retorna el contenido del objeto en un formato especifico
     def __str__(self):
         return "|{:13}|{:15}|{:16}|{:13}|{:13}|{:13}|{:13}|{:13}|"\
             .format(self.id, self.first_last_name, self.second_last_name,

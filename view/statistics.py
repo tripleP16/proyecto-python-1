@@ -1,7 +1,6 @@
 import datetime
 
 from controller.age_group_selector import select_age_group
-from controller.file_reader import read_file
 from controller.average_time import average_time
 from controller.gender_selector import gender_selector
 
@@ -19,6 +18,7 @@ def show_histogram(participants):
     print_histogram(len(masters), "Masters")
 
 
+# Funcion que devuelve los * para el histograma
 def get_characters(number):
     aux = ""
     for i in range(number):
@@ -26,6 +26,7 @@ def get_characters(number):
     return aux
 
 
+# Funcion que imprime el histograma
 def print_histogram(length, age_group):
     print("{:13}|{:13}".format(age_group + "(" + str(length) + ")", get_characters(length)))
 

@@ -1,3 +1,4 @@
+# Funcion que imprime el encabezado de la tabla
 def print_table_header(first_column=None):
     if first_column is not None:
         print(
