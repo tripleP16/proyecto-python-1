@@ -28,6 +28,7 @@ def actions_menu(participants):
         print("10. Mostrar promedio de tiempo por grupo etario y sexo")
         print("11. Salir")
         option = input("Ingrese una opcion: ")
+        option = option.strip()
         if option == "1":
             show_participants(participants)
         elif option == "2":
@@ -65,6 +66,7 @@ def main_menu():
         print("1. Leer archivo")
         print("2. Salir")
         option = input("Ingrese una opcion: ")
+        option = option.strip()
         if option == "1":
             file = input("Ingrese el nombre del archivo con la extension .txt previamente cargado en el directorio "
                          "data: ")

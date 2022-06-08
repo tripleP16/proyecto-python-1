@@ -1,7 +1,4 @@
 from controller.mapper import map_to_person_from_string
-
-
-# Funcion que lee el archivo txt y retorna una lista de personas
 from exceptions.invalid_file_format_exception import InvalidFileFormatException
 
 
